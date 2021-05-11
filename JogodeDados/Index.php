@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <?php
-    $nome = (isset($_POST['nome']) ? $_POST['nome'] : '')."\n";
+    $nome = (isset($_POST['nome']) ? $_POST['nome'] : '');
     $nome2 = "Computador \n";
-    $dado1 = mt_rand (1, 6)."\n";
-    $dado2 = mt_rand (1, 6)."\n";
-    $dado3 = mt_rand (1, 6)."\n";
-    $dado4 = mt_rand (1, 6)."\n";
+    $dado1 = mt_rand (1, 6);
+    $dado2 = mt_rand (1, 6);
+    $dado3 = mt_rand (1, 6);
+    $dado4 = mt_rand (1, 6);
     $soma1 = 0;
     $soma2 = 0;
 
@@ -28,9 +28,15 @@
         <input type="submit" name="jogar" id="jogar" value="Jogar" >
     </fieldset>
     </form>
-    <?php 
-        echo nl2br($nome); 
-        echo nl2br($dado1);
+    <?php
+     echo ($nome);
+    ?>
+    <br> 
+    <?php
+     echo ($dado1);
+    ?>
+    <br>   
+    <?php
         switch ($dado1) {
             case 1 : echo nl2br("<img src= https://images.vectorhq.com/images/previews/27e/dado-1-138329.png>\n"); break;
             case 2 : echo nl2br("<img src= https://images.vectorhq.com/images/previews/482/dado-2-138325.png>\n"); break;
@@ -39,7 +45,12 @@
             case 5 : echo nl2br("<img src= https://images.vectorhq.com/images/previews/93c/dado-5-138316.png>\n"); break;
             case 6 : echo nl2br("<img src= https://cdn.picpng.com/dice/small/dice-cube-die-six-6-game-luck-91235.png>\n"); break;
         }
-        echo nl2br($dado2); 
+    ?>
+    <?php
+        echo ($dado2); 
+    ?>
+    <br>
+    <?php
         switch ($dado2) {
             case 1 : echo nl2br("<img src= https://images.vectorhq.com/images/previews/27e/dado-1-138329.png>\n"); break;
             case 2 : echo nl2br("<img src= https://images.vectorhq.com/images/previews/482/dado-2-138325.png>\n"); break;
@@ -50,8 +61,14 @@
         }
     ?>
     <?php
-        echo nl2br($nome2);
-        echo nl2br($dado3);
+        echo ($nome2); 
+    ?>
+    <br>
+    <?php
+        echo ($dado3); 
+    ?>
+    <br>
+    <?php
         switch ($dado3) {
             case 1 : echo nl2br("<img src= https://images.vectorhq.com/images/previews/27e/dado-1-138329.png>\n"); break;
             case 2 : echo nl2br("<img src= https://images.vectorhq.com/images/previews/482/dado-2-138325.png>\n"); break;
@@ -60,7 +77,12 @@
             case 5 : echo nl2br("<img src= https://images.vectorhq.com/images/previews/93c/dado-5-138316.png>\n"); break;
             case 6 : echo nl2br("<img src= https://cdn.picpng.com/dice/small/dice-cube-die-six-6-game-luck-91235.png>\n"); break;
         }
-        echo nl2br($dado4); 
+    ?>
+    <?php
+        echo ($dado4); 
+    ?>
+    <br>
+    <?php
         switch ($dado4) {
             case 1 : echo nl2br("<img src= https://images.vectorhq.com/images/previews/27e/dado-1-138329.png>\n"); break;
             case 2 : echo nl2br("<img src= https://images.vectorhq.com/images/previews/482/dado-2-138325.png>\n"); break;
