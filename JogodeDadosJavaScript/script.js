@@ -35,11 +35,11 @@ function mostrarTela(n, d1, d2, total){
     document.write('<br>');
     document.write("Dado 1: " + d1);
     document.write('<br>');
-    document.write(imagDados(d1));
+    (imagDados(d1));
     document.write('<br>');
     document.write("Dado 2: " + d2);
     document.write('<br>');
-    document.write(imagDados(d2));
+    (imagDados(d2));
     document.write('<br>');
     document.write("Total = " + total);
     document.write('<br>');
